@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;0,900;1,300;1,500;1,700;1,900&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+/*Criando cabeçalho*/
+header{
+    background-color: #bbb;
+    padding: 20px 0;
+}
+
+/*Criando menu principal*/
+.header-box{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+
+}
+nav a{
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+/*Criação do produto*/
+.product{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+
+}
+.product-config{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    margin: 0 1.5%;
+    background-image: linear-gradient(0deg, rgb(233, 231, 231), white 20px);
+    vertical-align: top;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: #000 2px solid;
+    border-radius: 20px;
+}
+
+.product-config:hover{
+    border-color: #c78c19;
+
+}
+.product-config:hover h2{
+    font-size: 34px;
+}
+.product-config:active{
+    background-image: linear-gradient(0deg, #f8d898, white 20px);
+}
+
+.product-config h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+.product-description{
+    font-size: 18px;
+}
+.price{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+/*criando o rodapé*/
+footer{
+    text-align: center;
+    background-image: url("/img/bg.jpg");
+    padding: 0 0 20px 0;
+}
+.copyright{
+    color: #fff;
+    font-size: 13px;
+    margin-top: 20px;
+}
+form{
+    margin: 40px 0;
+}
+#enviar{
+    background-color: #ffb342;
+    padding: 5px 25px;
+    border: none;
+    box-shadow: #000 10px;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.5s all;
+}
+
+#enviar:hover{
+    transform: scaleX(1.1);
+}
+
+table{
+    margin: 20px 0 40px;
+}
+thead{
+    color: white;
+    background-color: #030303;
+    font-weight: bold;
+}
+td{
+    border: 1px solid #000;
+    padding: 20px;
+}
+th{
+    border: #fff solid 1px;
+    padding: 10px;
+}
+
+/*Pagina Inicial*/
+.banner {
+    width: 100%;
+}
+.title-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+.utensilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+.about{
+    width: 940px;
+    margin: 0 auto;
+    padding: 3em 0;
+    background: #fefefefe;
+}
+.about p {
+    margin: 0 0 1em;
+}
+.about strong{
+    font-weight: bold;    
+}
+.about em{
+    font-style: italic;
+}
+
+/*Localização*/
+.map{
+    margin: 0 auto;
+    padding: 3em 0;
+    background-image: linear-gradient(to top, #888 25%, #fefefefe);
+}
+.mapa-conteudo{
+    width: 940px;
+    margin: 0 auto;
+}
+.map p{
+    margin-bottom: 2em;
+    text-align: center;
+}
+.map-google{
+    margin: 0 auto;
+}
+/*end localização*/
+/*Benefits*/
+.benefit{
+    color: #fff;
+    background-color: #888;
+    padding: 3em 0;
+}
+.conteudo-benefit{
+    width: 640px;
+    margin: 0 auto;
+    display: flex;
+}
+.list-benefit{
+    width: 40%;
+}
+.itens:before{
+    content: "★";
+    padding-right: 5px;
+}
+.itens{
+    line-height: 1.5;
+    
+}
+.itens:first-child{
+    font-weight: bold;
+    
+}
+.img-benefit{
+    width: 60%;
+}
+.video{
+    width: 560px;
+    margin: 2em auto;
+}
+
+/*Responsividade*/
+@media screen and (max-width:400px){
+    .header-box, .about, .conteudo-benefit, .mapa-conteudo, .video{
+        width: auto;
+    }
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .conteudo-benefit{
+        flex-wrap: wrap;
+    }
+    .list-benefit, .img-benefit{
+        text-align: center;
+        width: 100%;
+
+    }
+
+}
